@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dittonut.axolotlbreeder.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MixinAxolotlMod"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
