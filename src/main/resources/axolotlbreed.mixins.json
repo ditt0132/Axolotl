@@ -4,7 +4,7 @@
   "package": "dittonut.axolotlbreeder.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "MixinAxolotlMod"
+    "MixinAxolotlMod", "MixinIsGlowing"
   ],
   "injectors": {
     "defaultRequire": 1

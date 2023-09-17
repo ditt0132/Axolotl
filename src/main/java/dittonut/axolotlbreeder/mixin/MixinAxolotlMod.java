@@ -28,14 +28,12 @@ public abstract class MixinAxolotlMod extends PassiveEntity {
     private void onHandleStatus(byte status, CallbackInfo ci) {
         if (status == 18) {
             // the entity is breeding!!!!!
-            assert MinecraftClient.getInstance().player != null;
-            MinecraftClient.getInstance().player.sendMessage(Text.of("text at breed(not checked)"));
-            MinecraftClient.getInstance().player.sendMessage(Text.of(this.getType().toString()));
+
             if (this.getType().equals(EntityType.AXOLOTL)) {
                 // Timer timer = new Timer();
+                assert MinecraftClient.getInstance().player != null;
                 MinecraftClient.getInstance().player.sendMessage(Text.of("text at breed(only axolotl)"));
                 MixinAxolotlMod axolotl = this;
-                assert MinecraftClient.getInstance().player != null;
                 MinecraftClient.getInstance().player.sendMessage(Text.of("after setGlow"));
                 /*
                 timer.schedule(new TimerTask() {
@@ -48,4 +46,5 @@ public abstract class MixinAxolotlMod extends PassiveEntity {
             }
         }
     }
+
 }
